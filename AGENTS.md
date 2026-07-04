@@ -19,11 +19,12 @@ The project is in its **initial state** — only the virtual environment exists.
 - Keep Celery tasks thin; they should call service functions.
 
 ## Current state
-- **Python 3.10**, Django 5.2, ruff, coverage installed in `.venv`
-- No `manage.py`, `requirements.txt`, `pyproject.toml`, or app code exists
+- **Python 3.10**, Django 5.2, ruff, coverage, pytest, pytest-django, pytest-cov installed
+- Django project scaffolded at `config/`, `manage.py` exists
+- `books` app created with `Book` and `Review` models
+- Migrations for `books` created and applied
+- Database schema documented in `openspec/database_design.md`
 - The AGENTS.md is the **authoritative config** — update it as the project evolves
-- The `.venv` was created before any project scaffolding — consider `django-admin startproject` when ready
-- No openspec documentation directory exists yet; create one when specs are needed
 
 ## Commands
 Run server: `python manage.py runserver`
